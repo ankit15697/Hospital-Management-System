@@ -1,0 +1,74 @@
+<?php
+  session_start();
+  require('function.php');
+  $con=con();
+  if(isset($_SESSION['user_id']))
+   {
+     $id=$_SESSION['user_id'];
+   }
+   else
+    {
+      header("location:http://".$_SERVER['HTTP_HOST'].dirname($_SERVER['PHP_SELF'])."/index.php");
+      exit();
+    }
+    $a;
+    $user = $_POST["user_id"];
+    $userid = $_SESSION['user_id'];
+    $date1=$_POST['da'];
+    $detail = "SELECT * FROM Appointments where duser_id='$userid' and date1='$date1'";
+    $result = $con->query($detail);
+?>
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Doctor Patient Search Page </title>
+   <link rel="shortcut icon" href="img/01.jpeg" />
+   <link  href="css/doctor_search.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div id="full">
+    <div id="header">
+      <div id="lg">
+         <h1 style="color:white;"> MNNIT HEALTH </h1>
+      </div>
+      <div id="li">
+        <a href="doctor_home.php"> Home  &nbsp;&nbsp;</a>
+        <a href="dupdate.php"> Update Details &nbsp;&nbsp;</a>
+        <a href="logout.php"> Logout </a>
+      </div>
+    </div>
+    <div id="ma">
+      <marquee> <h1 style="color:white;"> Welcome <?php echo "$userid";?> </h1></marquee>
+    </div>
+    <div id="fo">
+         <center> <h3 style="color:red;opacity:1;"> List of Patient on <?php echo " $date1";?> </h3></center>
+         <?php
+           echo "<center><table>";
+           echo "<tr><th>Name</th><th>Email</th><th>Mobile</th><th>Address</th><th>Desease</th></tr>";
+           $a=0;
+           while($row=$result->fetch_array())
+            {
+              $a=1;
+              $qu="select *from Customers where user_id='$row[1]'";
+              $result1=$con->query($qu);
+              while($row1=$result1->fetch_array())
+               {
+                 echo "<tr><td> $row1[1] $row1[2] $row1[3] </td> <td> $row1[4]</td><td> $row1[5]</td><td> $row1[6] $row1[7] $row1[8] </td> <td>$row1[9]</td></tr>";
+               }
+            }
+            echo "</table></center>";
+           if($a==0)
+            {
+              echo "<br/><br/><hr/>";
+              echo "<center>No Patient has been found to you</center>";
+            }
+         ?>
+    </div>
+    <div id="abo">
+    <p style="color:black"> &copy;  2018</p>
+    </div>
+  </div>
+ </body>
+</html>

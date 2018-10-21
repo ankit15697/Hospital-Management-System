@@ -1,0 +1,12 @@
+body
+ {
+   background-color:#A7A8A7;
+ }
+ 
+ table, th, td {
+    margin:5px;
+    text-align: center;
+    padding:5px;
+    cellpadding:10px;
+    width:70%;
+}
