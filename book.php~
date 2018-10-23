@@ -82,7 +82,7 @@
                   <td> <input type="text" name="add3" placeholder="Address Line3"/></td>
                 </tr>
               </table>
-	  <center><input type='submit' name='sub' value='Submit'/></center>
+	  <center><input type="reset" name="r" value="reset"/> <input type='submit' name='sub' value='Submit'/></center>
            </center>
           </form>
        </div>

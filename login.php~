@@ -45,7 +45,7 @@
              </tr>
              </table>
              </center>
-             <center><input type="reset" name="reset" value="Reset"/> <span> &nbsp;</span><input type="submit" name="submit" value="submit"/></center>
+             <center><input type="reset" name="reset" value="Reset"/> <span> &nbsp;&nbsp;</span><input type="submit" name="submit" value="submit"/></center>
              <br/>
           </form>
        </div>

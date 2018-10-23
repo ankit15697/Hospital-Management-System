@@ -13,7 +13,7 @@
       </div>
       <div id="li">
        <a href="index.php"> Home &nbsp;&nbsp;</a>
-        <a href="search.php"> Seach&nbsp;&nbsp;</a>
+        <a href="search.php"> Search&nbsp;&nbsp;</a>
         <a href="book.php"> Book &nbsp;&nbsp;</a>
         <a href="login.php"> Member Login&nbsp;&nbsp;</a>
         <a href="about.php"> ABOUT  </a>

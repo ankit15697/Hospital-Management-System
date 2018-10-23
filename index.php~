@@ -12,11 +12,11 @@
          <h1 style="color:white;"> MNNIT HEALTH </h1>
       </div>
       <div id="li">
-        <a href="index.php"> Home &nbsp;</a>
-        <a href="search.php"> Seach&nbsp;</a>
-        <a href="book.php"> Book &nbsp;</a>
-        <a href="login.php"> Member Login&nbsp;</a>
-        <a href="about.php"> ABOUT </a>
+        <a href="index.php"> Home &nbsp;&nbsp;</a>
+        <a href="search.php"> Seach&nbsp;&nbsp;</a>
+        <a href="book.php"> Book &nbsp;&nbsp;</a>
+        <a href="login.php"> Member Login&nbsp;&nbsp;</a>
+        <a href="about.php"> ABOUT  </a>
       </div>
     </div>
     <div id="ma">

@@ -23,7 +23,7 @@
       <h1 style="color:#401126;"> ABOUT ME </h1>
     </div>
     <div id="im">
-      <img src="img/03.jpeg" alt="Image" height="200" width="200" style="border:2px solid black; border-radius:40%;"/>
+      <img src="img/03.jpeg" alt="Image" height="200" width="200" style="border:2px solid black; border-radius:50%;"/>
       <hr/>
       <h3 style="color:red;font-size:25px;"> Ankit Mishra </h3>
     </div>

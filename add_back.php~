@@ -19,40 +19,47 @@
  if($fname==NULL)
   {
 	echo "<script>alert('name must be field.');window.location='add.php';</script>";
+	die(); 
 
   }
    if($pass==NULL)
   {
 	echo "<script>alert('Password filed can not be empty.');window.location='add.php';</script>";
+	die(); 
 
   }
   
   if($user_id==NULL)
   {
 	echo "<script>alert('User id must be field.');window.location='add.php';</script>";
+	die(); 
 
   }
   
   if($email_id==NULL)
   {
 	echo "<script>alert('Email id must be field.');window.location='add.php';</script>";
+	die(); 
 
   }
   
   if($mno==NULL)
   {
 	echo "<script>alert('Mobile  must be field.');window.location='add.php';</script>";
+	die(); 
 
   }
   if($desease==NULL)
   {
 	echo "<script>alert('Desease  must be selected.');window.location='add.php';</script>";
+	die(); 
 
   }
   
   if($add1==NULL)
   {
 	echo "<script>alert('Address  must be given.');window.location='add.php';</script>";
+	die(); 
 
   }
   

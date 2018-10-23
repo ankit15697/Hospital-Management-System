@@ -49,7 +49,7 @@
 	die(); 
 
   }
-  if($desease==NULL)
+  if($desease=="Choice")
   {
 	echo "<script>alert('Desease  must be selected.');window.location='add.php';</script>";
 	die(); 
